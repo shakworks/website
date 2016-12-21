@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  
+  <head profile="http://www.w3.org/2005/10/profile">
+   <link rel="icon" 
+      type="image/png" 
+      href="http://ww2.apakistanichristian.co.uk/flag.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pakistani Christian is one small attempt to see all happening in the Pakistan to the Christians.">
+    <meta name="description" content="[% description %]">
+    <meta name="keywords" content="[% keywords %]">
+    <meta name="author" content="">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/mycss.css" rel="stylesheet">
+    <link href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+	<title>[% title %]</title>
+  </head>
+  
+  <body>
+    <div class="container-fluid outermost">
+	<div class="container" id="mainBody">
+	  <div class="row index-title visible-xs visible-sm">
+				<img src="/images/indexHeader.png" alt="Index image header" id="headerimage"/>				
+				<!--<img src="/images/icons/siteicon-100.png" id="siteIcon" />-->
+		</div>
+	  <!---topMenu-->
+	<div class="row clearfix">
+		<div class="col-md-12 column navbar-wrapper ">
+			<nav class="navbar navbar-static-top " role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="fa fa-arrow-down"></span>
+					 </button>
+					 <a class="navbar-brand" href="/home.pl?name=index">
+					  <img src="/images/icons/siteicon-100.png" id="siteIcon" />
+					  <span id="headerName">A Pakistani Christian</span>
+					 </a>				
+				</div>
+				
+				<style>
+				  				</style>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pakistan<span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+							    <li><a href="/pakistan/history_of_pakistan.html">History of Pakistan</a></li>
+							    <li><a href="/pakistan/pakistan_religions.html">Religions of Pakistan</a></li>								
+							    <li><a href="/pakistan/contributions_of_pakistani_christians.html">Contributions of Pakistani Christians</a></li>
+							    <li><a href="/pakistan/christian_status_in_pakistan.html">Christian Status in Pakistan</a></li>
+							  </ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">295 C<span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+							    <li><a href="/295c/what_is_295C.html">What is 295C</a></li>
+							    <li><a href="/295c/victims_of_295C.html">Victims of 295C</a></li>
+							    <li><a href="/295c/incident_videos.html">Incidents videos</a></li>
+							  </ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Bible<span class="caret"></span></a>
+							  <ul class="dropdown-menu">
+							    <li><a href="/Bible/another_look/home.html">Another Look</a></li>
+							    <li><a href="/Bible/Science_and_Bible/home.html">Science and The Bible</a></li>
+							    <li><a href="/Bible/reviews/home.html">Reviews</a></li>
+							    <li><a href="/295c/home.html">Uncategorized</a></li>
+							  </ul>
+						</li>
+						<li>
+							<a href="/news.html">News</a>
+						</li>
+						<li>
+							<a href="/about.html">About</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div><!---rowClearFix topMenu-->
+	<br>
+			<div class="row" id="verse-well" >
+				  <div class="well well-lg">
+					  [% topVerses.last %]
+					  <p class="text-right">[% topVerses.first %]</p>
+				  </div>
+		  </div><!--Verse Well-->

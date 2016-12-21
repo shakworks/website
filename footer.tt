@@ -1,0 +1,95 @@
+<hr/>
+ <div class="row clearfix hidden-sm hidden-xs visible-md visible-lg" id="threeColumn">
+		  <div class="col-md-4 column">
+			  <div id="cipNews" class="newsCol">
+			  <h3 class="newsTitle"><span>Christians In Pakistan</span></h3>
+                   <div class="listofnews">
+                      [% FOREACH news = news1 %] <span class="newsoflist fa fa-external-link">[% news %]</span> [% END %]
+                   </div><!--list-group//-->
+			  </div>
+		  </div>
+		  <div class="col-md-4 column">
+			  <div id="pcpNews" class="newsCol">
+			  <h3 class="newsTitle"><span>Pakistan Christian Post</span></h3>
+                   <div class="listofnews">
+                      [% FOREACH news = news2 %] <span class="newsoflist fa fa-external-link">[% news %]</span> [% END %]
+                   </div><!--list-group//-->
+			   </div>
+		  </div>
+		  <div class="col-md-4 column">
+			  <div id="pNews" class="newsCol">
+			  <h3 class="newsTitle"><span>Persecution</span></h3>
+                   <div class="listofnews">
+                      [% FOREACH news = news3 %] <span class="newsoflist fa fa-external-link">[% news %]</span> [% END %]
+                   </div><!--list-group//-->
+			  </div>
+		  </div>
+	  </div>
+	  <!--threeColumn--->
+ <!--Collapse-->
+ <div class="panel-group visible-sm visible-xs hidden-md hidden-lg" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#News1" aria-expanded="false" aria-controls="collapseOne">
+          Christians In Pakistan
+        </a>
+      </h4>
+    </div>
+    <div id="News1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <div class="list-group">
+                      [% FOREACH news = news1 %] <span class="fa fa-external-link">[% news %]</span><br/> [% END %]
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#News2" aria-expanded="false" aria-controls="collapseTwo">
+          Pakistan Christian Post
+        </a>
+      </h4>
+    </div>
+    <div id="News2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <div class="list-group">
+                      [% FOREACH news = news2 %] <span class="fa fa-external-link">[% news %]</span><br/> [% END %]
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#News3" aria-expanded="false" aria-controls="collapseThree">
+          Persecution.org
+        </a>
+      </h4>
+    </div>
+    <div id="News3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <div class="list-group">
+                      [% FOREACH news = news3 %] <span class="fa fa-external-link">[% news %]</span><br/> [% END %]
+                   </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--collapse-->
+ <hr/>
+    <script src="/javascript/jquery.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/respond.js"></script>
+    <script src="/javascript/myScript.js"></script>
+    <script src="/javascript/ekko-lightbox.js"></script>
+	<script type="text/javascript" src="http://av1611.com/verseclick/verseclick.js"></script>
+	<script>
+    $('.lateScroll').parallax({ 'coeff':-0.15 });
+     
+    </script>
+  </body>
+
+</html>

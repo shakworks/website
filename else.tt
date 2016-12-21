@@ -1,0 +1,84 @@
+  <div class="row clearfix" id="topSection">
+	<div class="visible-sm visible-xs hidden-lg hidden-md" id="dropDowns">  
+	  [% IF moreLinks.size > 0 %]
+	  <select class="form-control" id="dynamic_select">
+		[% FOREACH link IN moreLinks.keys %]
+		  [% IF link=="home" && presentName=="home" %]
+		   <option selected="selected">Please Choose</option>
+		  [% ELSIF link==presentName %]
+			<option selected="selected">[% link %]</option>
+		  [% ELSE %]
+			[% NEXT IF link=="home" %]
+		  <option value="[% moreLinks.$link %]">[% link %]</option>
+		  [% END %]
+		[% END %]
+	  </select>
+	  [% END %] <!--IFMORE-->
+	</div><!---DropDown--->
+		  <div class="section">
+				<div class="row" id="contentHeader"><h2><ul>[%title%]</ul></h2></div>
+                <div class="row">
+                    <div class="col-md-8 contentCoulmn" >
+                        
+                        <div class="row">
+						  <div class="col-md-12">
+						  [% IF content==""%]  
+							Coming Soon!
+						  [% ELSE %]
+							[% content %]
+						  [% END %]
+						  </div>
+						</div>
+						
+						[% IF author %]
+						    [%  IF author=="admin" %]
+							[% ELSE %]
+							  <div id="authorBlock" class="row">
+								<div class="col-md-12">
+								<hr />
+								<div id="showHide">
+								  <h4>About Author</h4>
+								</div>
+								<div id="writer" style="display:none">
+								  <h3>[% author %]</h3>
+								  <p id="aboutauthor">[% aboutauthor %]</p>.
+								</div>
+								</div>
+							  </div><!--AuthorBlock-->
+						  [% END %]
+						[% END %]
+                    </div><!---contentCoulmn--->
+                    <div class="col-md-4 hidden-sm hidden-xs visible-lg visible-md"  id="sidebar-wrapper">
+					
+                        [% IF moreLinks.size >0 %]
+						<table id="example" class="table table-hover" cellspacing="0" width="100%">
+							[% FOREACH link IN moreLinks.keys -%]
+							  [% NEXT IF link == "home" %]
+								[% IF presentName==link %]	  								
+								  <tr><td class="fa fa-arrow-left sideNames">&nbsp;&nbsp;[% link %]</td></tr>
+								[% ELSE %]	
+								  <tr><td class="sideNames text-capitalize">
+									<a href="[% moreLinks.$link %]">[% link %]</a>
+								  </td></tr>
+								[% END %]
+							[% END -%]
+						</table>
+						[% ELSE %]
+						  <ul class="nav nav-stacked nav-pills navbar-side rightside-navbar">
+							<li class="active">
+							  <a href="#one">First Heading</a>
+							</li>
+							<li>
+							  <a href="#two">second Heading</a>
+							</li>
+							<li class="disabled">
+							  <a href="#three">third heading</a>
+							</li>
+						  </ul>
+						[% END %]
+					 </div><!--col-md-4--->
+                  </div><!---row-->
+              </div><!--section-->
+		 
+  </div><!---topSection--->
+	  
